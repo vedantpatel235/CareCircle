@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Consultation | CareCircle Canada</title>
+<style>
+body { font-family: Arial, sans-serif; background: #f4f7fa; margin: 0; }
+nav { text-align:center; background:white; padding:15px; }
+nav a { margin:0 15px; text-decoration:none; color:#0d6efd; font-weight:bold; }
+.container { max-width:600px; margin:40px auto; background:white; padding:30px; border-radius:8px; }
+h1 { text-align:center; color:#0d6efd; }
+input, select, textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
+button { background:#0d6efd; color:white; padding:12px; border:none; width:100%; border-radius:6px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="companion.html">Become a Companion</a>
+</nav>
+
+<div class="container">
+<h1>Free Family Consultation</h1>
+
+<form name="family-form" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="family-form">
+<input type="hidden" name="_next" value="thankyou.html">
+
+<label>Full Name</label>
+<input type="text" name="fullName" required>
+
+<label>Phone</label>
+<input type="tel" name="phone" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>City</label>
+<input type="text" name="city" value="Toronto" required>
+
+<label>Who needs companionship?</label>
+<select name="whoNeeds" required>
+<option>Mother</option>
+<option>Father</option>
+<option>Both</option>
+<option>Other</option>
+</select>
+
+<label>Hours needed per week</label>
+<select name="hoursPerWeek" required>
+<option>3–5</option>
+<option>6–10</option>
+<option>10+</option>
+</select>
+
+<label>Preferred Language</label>
+<input type="text" name="language">
+
+<label>Start Date</label>
+<input type="date" name="startDate">
+
+<label>Concerns</label>
+<textarea name="concerns" rows="4"></textarea>
+
+<button type="submit">Submit Request</button>
+</form>
+</div>
+
+</body>
+</html>
